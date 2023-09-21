@@ -1,0 +1,161 @@
+nav{
+    margin:25px;
+}
+/* main content */
+.custom-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height:80vh;
+
+}
+
+.flex-left{
+    width:auto;
+}
+.custom-container h1{
+    font-size: 80px;
+    margin-bottom:50px;
+    line-height: 4.4rem;
+  
+}
+span::before {
+    content: "\A"; /* Unicode for a line break (newline) */
+    white-space: pre; /* Preserve white spaces and line breaks */
+  }
+  
+.custom-container p{
+    font-size: 18px;
+    margin-bottom:50px;
+    width:380px;
+}
+.custom-button{
+    border-radius: 15px;
+    padding:10px 25px;
+}
+.clients{
+    margin-top:80px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainImg{
+    height:700px;
+    display: block;
+}
+.mobileImg{
+    display: none;
+}
+
+@media (max-width: 600px) {
+    /* Your responsive styles go here */
+    .custom-container {
+        display: flex;
+        flex-direction: column-reverse;
+        height:auto;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .custom-container h1{
+        text-align: center;
+        font-size: 45px;
+        margin-top:25px;
+        margin-bottom:10px;
+      
+    }
+    .custom-container p{
+        text-align: center;
+    }
+    .mainImg{
+        display: none;
+    }
+    .mobileImg{
+        display: block;
+        width: auto;
+        height: 350px;
+    }
+    .custom-button{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        
+    }
+    span::before {
+        content: none; /* Remove the content */
+        white-space: normal; /* Reset white-space property */
+      }
+    .flex-left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .clients{
+        margin-top:20px;
+        padding: 12px;
+    }
+    
+      
+  }
+  
+  /* Styles for screens between 601px and 1024px wide */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    /* Your responsive styles go here */
+    .custom-container {
+        display: flex;
+        flex-direction: column-reverse;
+        height:auto;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .custom-container h1{
+        text-align: center;
+        font-size: 45px;
+        margin-top:25px;
+        margin-bottom:10px;
+      
+    }
+    .custom-container p{
+        text-align: center;
+    }
+    .mainImg{
+        display: none;
+    }
+    .mobileImg{
+        display: block;
+        width: auto;
+        height: 350px;
+    }
+    .custom-button{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        
+    }
+    span::before {
+        content: none; /* Remove the content */
+        white-space: normal; /* Reset white-space property */
+      }
+    .flex-left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .clients{
+        margin-top:20px;
+        padding: 12px;
+    }
+  }
+  
+  /* Styles for screens larger than 1024px wide */
+  @media (min-width: 1025px) {
+    /* Your responsive styles go here */
+    .my-responsive-element {
+      font-size: 24px;
+    }
+  }
